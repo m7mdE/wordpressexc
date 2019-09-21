@@ -43,3 +43,11 @@ ul#menu-top-menu a {
     border-color:#000 !important;
     color:#fff !important;
 }
+
+@media(max-width:768px){
+    .col-6, .col-4, .col-8{
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+    }
+}
