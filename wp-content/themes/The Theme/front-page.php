@@ -1,20 +1,18 @@
 <?php get_header(); ?>
 
 
-<div class="conatiner">
-    <div class="row">
+<!-- Main Content -->
+<div class="container pt-5 pb-5">
     
-        <div class="col">
-        left side
-        </div>
+        <h1><?php the_title(); ?></h1>
 
-        <div class="col">
-        right side
-        </div>
+        <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+        
+            <?php the_content(); ?>
 
-    </div>
+        <?php endwhile; endif;?>
 
-</div>
+  </div>
 
 
 <?php get_footer(); ?>
