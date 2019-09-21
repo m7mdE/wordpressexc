@@ -35,7 +35,7 @@ function custom_post_listing( $atts ) {
     </div>
 
     <?php  the_excerpt(); ?>
-    <a hrev="<?php the_permalink(); ?>" class="btn btn-success white">Read More</a>
+    <a href="<?php the_permalink(); ?>" class="btn btn-success white">Read More</a>
 </div>
     </div>
  
